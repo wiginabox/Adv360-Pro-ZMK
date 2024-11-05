@@ -17,6 +17,22 @@
             bindings = <&kp RET>;
         };
 
+        shortcat: shortcat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LG(LS(SPACE))>;
+
+            label = "SHORTCAT";
+        };
+
+        strongbox: strongbox {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(LC(J))>;
+
+            label = "STRONGBOX";
+        };
+
         #endif
 
         hm: homerow_mods {
